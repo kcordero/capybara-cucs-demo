@@ -17,16 +17,5 @@ Feature: Withdraw Cash
     Examples:
       | Balance | Amount | Button | Balance Status | Message             |
       | 10000   | 2000   | OK     | Deducted       | Success             |
-      | 8000    | 9000   | OK     | Same           | Balance not enough  |
-      | 8000    | 8000   | OK     | Empty          | Success             |
-
-    #Given I have <Initial Balance> in my account
-    #When I withdraw <Amount>
-    #Then My account should be left with <Balance>
-    #And Transaction should be a <Message>
-
-    #Examples:
-    #  | Initial Balance | Amount | Balance | Message |
-    #  | 500             | 100    | 400     | Success |
-    #  | 500             | 1000   | 500     | Failure |
-
+      | 10000   | 11000  | OK     | Same           | Balance not enough  |
+      | 10000   | 10000  | OK     | Empty          | Success             |
