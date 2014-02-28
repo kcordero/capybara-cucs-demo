@@ -1,0 +1,46 @@
+h1 {
+	text-align: center;
+}
+
+form {
+	margin: 0 auto;
+	width: 50%;
+}
+
+form .label,
+form .field {
+	display: inline-block;
+} 
+
+form .label {
+	width: 49%;
+	text-align: right;
+}
+
+form .field {
+	width: 49%;
+	text-align: left;
+}
+
+#notice.flash {
+	color: green;
+}
+
+#error.flash {
+	color: red;
+}
+
+.flash {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.field_with_errors {
+	background: red;
+	display: inline;
+}
+
+.actions {
+	margin: 15px;
+	text-align: center;
+}

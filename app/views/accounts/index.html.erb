@@ -1,0 +1,17 @@
+<h1>My Account</h1>
+<%= form_for @account, :url => withdraw_account_url(@account), :method => :post do |f| %>
+	<%=raw flash_message %>
+	<div>
+		<div class="label">Current Balance:&nbsp;</div>
+		<div class="field">$ <%= f.text_field :balance, :disabled => true %></field>
+	</div>
+	<div>
+		<div class="label">Enter amount to withdraw:&nbsp;</div>
+		<div class="field">$ <%= f.text_field :amount %></div>
+	</div>
+	<div class="actions">
+		<%= f.submit 'OK' %>
+		<%= f.button 'Cancel', :id => 'cancelBtn' %>
+	</div>
+
+<% end %>
